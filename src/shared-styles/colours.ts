@@ -1,0 +1,17 @@
+export const colours = {
+  black: 'rgb(0, 0, 0)',
+  blackOpacity: (opacity: number = 1) => `rgba(0, 0, 0, ${opacity})`,
+  blue1: 'rgb(247, 251, 255)',
+  blue5: 'rgb(0, 100, 180)',
+  blueOpacity: (opacity: number = 1) => `rgb(0, 100, 180, ${opacity})`,
+  grey1: 'rgb(230, 230, 230)',
+  grey5: 'rgb(150, 150, 150)',
+  grey8: 'rgb(50, 50, 50)',
+  orange1: 'rgb(254, 240, 236)',
+  orange4: 'rgb(247, 125, 85)',
+  orange5: 'rgb(245, 85, 30)',
+  orangeOpacity: (opacity: number = 1) => `rgb(245, 85, 30, ${opacity})`,
+  red5: 'rgb(255, 0, 0)',
+  white: 'rgb(255, 255, 255)',
+  whiteOpacity: (opacity: number = 1) => `rgba(255, 255, 255, ${opacity})`,
+};
