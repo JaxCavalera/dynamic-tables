@@ -1,8 +1,8 @@
 import { v4 as uuidV4 } from 'uuid';
-import { TableHeadingItem } from '../table-heading/TableHeading-models';
 import { BasicHeadingItem, BasicTableRow, BasicTableRowItem } from './Table-models';
 import { TableRowProps } from '../table-row/TableRow-models';
 import { TableRowItemProps } from '../table-row-item/TableRowItem-models';
+import { TableHeadingItem } from '../table-heading-item/TableHeadingItem-models';
 
 /**
  * ----------------------------------------------------------

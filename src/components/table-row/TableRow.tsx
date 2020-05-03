@@ -12,7 +12,7 @@ export const TableRow = ({ rowId, rowItems, columnIds }: TableRowProps) => {
     <ErrorBoundary>
       <TableRowWrapper key={rowId} data-testid={TableRowTestIds.tableRow} className="tableRow">
         {processedRowItems.map((rowItem) => (
-          <TableRowItem {...rowItem} />
+          <TableRowItem key={rowItem.itemId} {...rowItem} />
         ))}
       </TableRowWrapper>
     </ErrorBoundary>

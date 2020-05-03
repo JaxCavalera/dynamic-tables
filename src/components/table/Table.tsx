@@ -12,7 +12,7 @@ export const Table = ({ headingData, rows }: TableProps) => {
         <TableHeading {...headingData} />
         <TableRows>
           {rows.map((rowData) => (
-            <TableRow {...rowData} />
+            <TableRow key={rowData.rowId} {...rowData} />
           ))}
         </TableRows>
       </TableWrapper>

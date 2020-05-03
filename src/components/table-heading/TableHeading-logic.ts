@@ -1,5 +1,8 @@
-import { TableHeadingItem, ProcessedHeadingItem } from './TableHeading-models';
 import { SortDirection } from './TableHeading-models';
+import {
+  TableHeadingItem,
+  TableHeadingItemProps,
+} from '../table-heading-item/TableHeadingItem-models';
 
 /**
  * Flags the heading item being used for sorting by listing the sortDirection on it
@@ -12,7 +15,7 @@ export const processHeadingItems = (
   headingItems: TableHeadingItem[],
   sortColumnId: string,
   sortDirection: SortDirection,
-): ProcessedHeadingItem[] =>
+): TableHeadingItemProps[] =>
   headingItems.map((headingItem) => {
     if (headingItem.canSort && headingItem.columnId === sortColumnId) {
       return {
